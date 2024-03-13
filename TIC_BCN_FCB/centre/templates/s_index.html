@@ -1,13 +1,18 @@
 {% extends 'index.html' %}
 {% block content %}
 <h1>Muestra la información de los Alumnos de DAW2A</h1>
-<table>
+<table border="1px solid black">
+    <tr>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Correo</th>
+    </tr>
     {% for alumno in alumnos %}
     <tr>
-        <td><b>Nombre: </b> {{ alumno.name }}</td>
-        <td><b>Apellido: </b> {{ alumno.surname }}</td>
-        <td><b>Correo: </b> {{ alumno.email }}</td>
+        <td>{{ alumno.name }}</td>
+        <td>{{ alumno.surname }}</td>
+        <td>{{ alumno.email }}</td>
     </tr>
     {% endfor %}
-    {% endblock %}
 </table>
+{% endblock %}
