@@ -31,8 +31,8 @@ def students(request):
         {"name":"Veronica","surname":"Cartagena Jaldin","email":"veronica@itic.com"},
         {"name":"Gemma","surname":"Garrigosa Frances","email":"gemma@itic.com"},
     ]
-    context = {'alumnos': alumnos}
-    return render(request, 's_index.html', context )
+    context = {'users': alumnos, 'role': 'Alumnos'}
+    return render(request, 'table.html', context )
 
 def teachers(request):
     profesores = [
@@ -41,6 +41,6 @@ def teachers(request):
         {"name":"Xavi","surname":"Quesada","module":"M08"},
         {"name":"Oriol","surname":"Roca","module":"M09"},
     ]
-    context = {'profes': profesores}
+    context = {'users': profesores, 'role': 'Profesores'}
     #objeto context
-    return render(request, 't_index.html', context )
+    return render(request, 'table.html', context )

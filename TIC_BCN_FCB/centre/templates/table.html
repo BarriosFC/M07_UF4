@@ -1,6 +1,6 @@
 {% extends 'index.html' %}
 {% block content %}
-<h1>Muestra la información de los Alumnos de DAW2A</h1>
+<h1>Muestra la información de los {{ role }}</h1>
 <table border="1px solid black" >
     <tr>
         <th>Nombre</th>
@@ -8,11 +8,11 @@
         <th>Correo</th>
         <th>Adicionales</th>
     </tr>
-    {% for alumno in alumnos %}
+    {% for user in users %}
     <tr>
-        <td>{{ alumno.name }}</td>
-        <td>{{ alumno.surname }}</td>
-        <td>{{ alumno.email }}</td>
+        <td>{{ user.name }}</td>
+        <td>{{ user.surname }}</td>
+        <td>{{ user.email }}</td>
         <td><a href="">+info</a></td>
     </tr>
     {% endfor %}
