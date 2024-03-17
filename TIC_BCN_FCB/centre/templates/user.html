@@ -1,0 +1,12 @@
+{% extends 'index.html' %}
+{% block content %}
+<ul>
+    <h3>{{ user.name }} {{ user.surname }}</h3>
+    <li>ID: {{ user.id }}</li>
+    <li>Nombre: {{ user.name }}</li>
+    <li>Apellido: {{ user.surname }}</li>
+    <li>Correo: {{ user.email }}</li>
+    <li>Rol: {{ user.role }}</li>
+    <li>Módulos: {{ user.modules }}</li>
+</ul>
+{% endblock %}

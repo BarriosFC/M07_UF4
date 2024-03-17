@@ -1,0 +1,20 @@
+{% extends 'index.html' %}
+{% block content %}
+<h1>Muestra la información de los {{ role }}</h1>
+<table border="1px solid black" >
+    <tr>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Correo</th>
+        <th>Adicionales</th>
+    </tr>
+    {% for user in users %}
+    <tr>
+        <td>{{ user.name }}</td>
+        <td>{{ user.surname }}</td>
+        <td>{{ user.email }}</td>
+        <td><a href="{% url 'usuario' user.id %}">+info</a></td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}
