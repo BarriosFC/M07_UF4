@@ -1,4 +1,7 @@
-# VIEWS & TEMPLATES
+# MODELS
 ## Facundo Barrios
 
-[Enlace](https://drive.google.com/file/d/1WZzhPhzkzsLDd6ewkiUyodAEJwRwnOxQ/view?usp=sharing) al video demostración
+### IMPORTANTE:
+La creación de la BBDD fue manual, ya que al no tener acceso a PgAdmin ni Docker, no pudo autogenerarse. La tabla si fue autogenerada al realizar la migración. 
+
+![tabla](./tabla_uf4.png)
