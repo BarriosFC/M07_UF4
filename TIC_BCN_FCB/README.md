@@ -1,7 +1,10 @@
 # MODELS
 ## Facundo Barrios
 
-### IMPORTANTE:
-La creación de la BBDD fue manual, ya que al no tener acceso a PgAdmin ni Docker, no pudo autogenerarse. La tabla si fue autogenerada al realizar la migración. 
+### IMPORTANTE: 
 
-![tabla](./tabla_uf4.png)
+Form con as_p
+![con_as_p](./con_as_p.png)
+
+Form sin as_p
+![sin_as_p](./sin_as_p.png)
