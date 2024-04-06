@@ -6,14 +6,15 @@
         <th>Nombre</th>
         <th>Apellido</th>
         <th>Correo</th>
-        <th>Adicionales</th>
+        <th colspan="2">Acciones</th>
     </tr>
     {% for user in users %}
     <tr>
         <td>{{ user.name }}</td>
         <td>{{ user.surname }}</td>
         <td>{{ user.email }}</td>
-        <td><a href="{% url 'usuario' user.id %}">+info</a></td>
+        <td><a href="{% url 'update' user.id %}">Editar</a></td>
+        <td><a href="{% url 'delete' user.id %}">Eliminar</a></td>
     </tr>
     {% endfor %}
 </table>

@@ -1,0 +1,13 @@
+{% extends 'index.html' %}
+{% block content %}
+
+<h1>Formulario de Registro</h1>
+
+<form action="" method="POST">
+    {% csrf_token %}
+    
+    <p>Seguro que desea eliminar a {{ user.name }}</p>
+    <input type="submit" value="Confirmar" />
+</form>
+
+{% endblock %}
