@@ -5,6 +5,8 @@ urlpatterns = [
     path('', views.index, name='index'),
     path('teachers', views.teachers, name='teachers'),
     path('students', views.students, name='students'),
-    path('user/<str:id>/', views.user, name='usuario'),
-    path('user-form/', views.user_form, name='user_form')
+    #path('user/<str:id>/', views.user, name='usuario'),
+    path('user-form/', views.user_form, name='user_form'),
+    path('update/<str:pk>/', views.update_user, name='update'),
+    path('delete/<str:pk>/', views.delete_user, name='delete')
 ]
